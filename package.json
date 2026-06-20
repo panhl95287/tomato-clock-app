@@ -1,0 +1,31 @@
+{
+  "name": "tomato-clock-app",
+  "version": "1.0.0",
+  "description": "小番茄闹钟 - Electron 桌面应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --win",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tomato",
+    "pomodoro",
+    "electron"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.tomato-clock.app",
+    "productName": "小番茄闹钟",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+}
